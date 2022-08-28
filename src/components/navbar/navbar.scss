@@ -1,0 +1,103 @@
+.navbar {
+    width: 100%;
+    color: #7F265B;
+
+    .navbar_container {
+        padding: 15px 70px;
+        height: 80px;
+        // width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            flex: 1;
+
+            .logo {
+                font-size: 17px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+
+        .center {
+            display: flex;
+            gap: 10%;
+
+            flex: 3;
+
+            .nav {
+                font-size: 17px;
+                font-weight: 600;
+                text-transform: capitalize;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10%;
+
+            .sign_login {
+                border: 2px solid #7F265B;
+                border-radius: 5px;
+                font-weight: 700;
+                color: #7F265B;
+                padding: 4px 10px;
+                background: transparent;
+                cursor: pointer;
+                font-size: 17px;
+
+                &:hover {
+                    background-color: #7F265B;
+                    color: white;
+                }
+            }
+
+            .menu_icon {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:730px) {
+    .logo {
+        font-size: 14px !important;
+    }
+
+    .nav {
+        font-size: 14px !important;
+    }
+
+    .sign_login {
+        font-size: 14px !important;
+    }
+
+    .menu_icon {
+        display: flex !important;
+        background: transparent;
+        border: #7F265B;
+        border: 2px solid #7F265B;
+        border-radius: 5px;
+        color: #7F265B;
+    }
+
+}
+
+@media (max-width:610px) {
+    .center {
+        display: none !important;
+    }
+
+
+}
