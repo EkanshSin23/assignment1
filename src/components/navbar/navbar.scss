@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    color: #7F265B;
+    color: #4A92F0;
 
     .navbar_container {
         padding: 15px 70px;
@@ -26,15 +26,21 @@
 
             flex: 3;
 
-            .nav {
-                font-size: 17px;
-                font-weight: 600;
-                text-transform: capitalize;
-                cursor: pointer;
-                transition: all 0.3s;
+            .navlink {
+                text-decoration: none;
+                color: #4A92F0;
 
-                &:hover {
-                    text-decoration: underline;
+
+                .nav {
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -48,25 +54,43 @@
             gap: 10%;
 
             .sign_login {
-                border: 2px solid #7F265B;
+
                 border-radius: 5px;
+                border: 2px solid #4A92F0;
                 font-weight: 700;
-                color: #7F265B;
+                color: #4A92F0;
                 padding: 4px 10px;
                 background: transparent;
                 cursor: pointer;
                 font-size: 17px;
 
                 &:hover {
-                    background-color: #7F265B;
+                    background-color: #4A92F0;
                     color: white;
                 }
             }
 
             .menu_icon {
                 display: none;
+                color: #4A92F0;
+                border: 2px solid #4A92F0;
             }
         }
+    }
+}
+
+@media (max-width:990px) {
+    .center {
+        display: none !important;
+    }
+
+    .menu_icon {
+        display: flex !important;
+        background: transparent;
+
+
+        border-radius: 5px;
+
     }
 }
 
@@ -75,9 +99,7 @@
         font-size: 14px !important;
     }
 
-    .nav {
-        font-size: 14px !important;
-    }
+
 
     .sign_login {
         font-size: 14px !important;
@@ -94,10 +116,4 @@
 
 }
 
-@media (max-width:610px) {
-    .center {
-        display: none !important;
-    }
-
-
-}
+@media (max-width:610px) {}

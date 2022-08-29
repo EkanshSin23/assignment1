@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Mulish:wght@200;900&family=Nunito:wght@200&family=Roboto:wght@500&family=Rubik+Moonrocks&display=swap');
 
-.home {
-    background-color: #FFE6C9;
+.pagefour {
+    background: #F2F5FF;
     height: 100vh;
     font-family: 'Nunito', sans-serif;
 
-    .home_container {
+    .pagefour_container {
         display: flex;
         // align-items: center;
         justify-content: center;
@@ -27,7 +27,7 @@
 
             .left_main {
                 flex: 3;
-                background-color: #FFE6C9;
+                background-color: #F2F5FF;
                 border: 4px solid white;
                 border-radius: 5px 0px 0px 5px;
                 border-right: none;
@@ -41,7 +41,8 @@
                     height: 200px;
                     width: 200px;
                     border-radius: 50%;
-                    background-color: #7F265B;
+                    // background-color: #7F265B;
+                    background: linear-gradient(312.83deg, #4A92F0 9.21%, rgba(217, 217, 217, 0) 102.95%);
                     position: absolute;
                     top: -15%;
                     left: -15%;
@@ -51,7 +52,7 @@
                     height: 200px;
                     width: 200px;
                     border-radius: 50%;
-                    background: linear-gradient(293.52deg, #860752 12%, #FFD9A8 88.01%);
+                    background: linear-gradient(293.52deg, #4A92F0 12%, #FFFFFF 88.01%);
                     opacity: 0.4;
                     position: absolute;
                     bottom: -30%;
@@ -68,7 +69,7 @@
                         width: 45%;
                     }
 
-                    // background-image: url('https://customer.reposenergy.com/images/68312-login.gif');
+
                 }
 
                 .bottom_left_main {
@@ -78,12 +79,14 @@
                         font-size: 24px;
                         font-weight: 700;
                         text-align: center;
+                        color: #4A92F0;
 
                     }
 
                     .bottom_left_main_normal {
                         font-size: 15px;
                         text-align: center;
+                        color: #4A92F0;
                     }
                 }
             }
@@ -100,31 +103,27 @@
                 .login_form {
                     display: flex;
                     flex-direction: column;
+                    width: 60%;
 
                     .heading {
                         line-height: 10px;
 
                         h1 {
-                            font-size: 28px;
+                            font-size: 26px;
+                            font-weight: 900;
                         }
 
                         p {
                             color: gray;
+                            font-size: 12px;
+
+                            span {
+                                color: #4A92F0;
+                                cursor: pointer;
+                            }
                         }
                     }
 
-                    .google {
-                        text-align: center;
-                        border: 0.5px solid rgba(128, 128, 128, 0.39);
-                        border-radius: 5px;
-                        padding: 5px;
-                        color: gray;
-                        font-size: 11px;
-
-                        .icon {
-                            margin-right: 10px;
-                        }
-                    }
 
                     .before_input {
                         text-align: center;
@@ -134,8 +133,7 @@
 
                     label {
                         font-size: 11px;
-                        // margin-bottom: 3px;
-                        // margin-top: 5px;
+
                         color: gray;
                     }
 
@@ -145,24 +143,26 @@
                         margin-bottom: 10px;
                         border: 0.5px solid rgba(128, 128, 128, 0.39);
                         border-radius: 5px;
+                        outline: none;
 
                         &::placeholder {
-                            color: gray;
+                            color: rgba(128, 128, 128, 0.342);
                             font-size: 11px;
                         }
                     }
 
-                    .checkbox {
+                    .resend {
                         display: flex;
 
-                        justify-content: space-between;
+
                         align-items: center;
+
 
                         a {
                             text-decoration: none;
                             font-size: 10px;
                             font-weight: 700;
-                            color: #7F265B;
+                            color: #4A92F0;
                         }
 
 
@@ -171,7 +171,8 @@
                     button {
                         padding: 10px 0;
                         margin-top: 20px;
-                        background-color: #7F265B;
+                        background-color: #4A92F0;
+
                         border-radius: 5px;
                         border: none;
                         color: white;
@@ -179,17 +180,6 @@
                         cursor: pointer;
                     }
 
-                    .last_p {
-                        font-size: 11px;
-                        color: gray;
-                        text-align: center;
-
-                        span {
-                            color: #7F265B;
-                            cursor: pointer;
-                            font-weight: 700;
-                        }
-                    }
 
                 }
             }

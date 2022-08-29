@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import './home.scss'
+import './pagetwo.scss'
 import GoogleIcon from '@mui/icons-material/Google';
-const Home = () => {
+import Sidebar from '../../components/sidebar/Sidebar';
+const Pagetwo = () => {
     return (
-        <div className='home'>
+        <div className='pagetwo'>
             <Navbar />
-            <div className="home_container">
+            <Sidebar />
+            <div className="pagetwo_container">
 
                 <div className="main">
                     <div className="left_main">
@@ -24,12 +26,13 @@ const Home = () => {
                     <div className="right_main">
 
                         <div className="login_form">
-                            <div className="heading"> <h1>Login to your account </h1>
-                                <p>See what is going on in game world</p></div>
+                            <div className="heading"> <h1>Signup to create account </h1>
+                                <p>See what is going on in game world</p>
+                            </div>
                             <p className='google'><span className='icon'><GoogleIcon /></span>Continue with google</p>
                             <p className='before_input'>----or Sign in with Email----</p>
-                            <label htmlFor="email" >Email</label>
-                            <input type="text" id="email" placeholder='xyx@gmail.com' />
+                            <label htmlFor="email" >Email/Mobile</label>
+                            <input type="text" id="email" placeholder='xyx@gmail.com/123XXX' />
                             <label htmlFor="password">Email</label>
                             <input type="password" id="password" placeholder='Password' />
                             <div className="checkbox"><span> <input type="checkbox" id="checkbox" /><label htmlFor="checkbox" >Remember me</label></span>
@@ -49,4 +52,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Pagetwo
